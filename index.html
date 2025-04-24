@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekwise To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>🗓️ Weekwise To-Do List</h1>
+
+    <div class="weekdays">
+      <button onclick="showTasks('Sunday')">Sun</button>
+      <button onclick="showTasks('Monday')">Mon</button>
+      <button onclick="showTasks('Tuesday')">Tue</button>
+      <button onclick="showTasks('Wednesday')">Wed</button>
+      <button onclick="showTasks('Thursday')">Thu</button>
+      <button onclick="showTasks('Friday')">Fri</button>
+      <button onclick="showTasks('Saturday')">Sat</button>
+    </div>
+
+    <div class="input-area">
+      <textarea id="taskInput" rows="2" placeholder="Add your task..."></textarea>
+      <button onclick="addTask()">Add</button>
+    </div>
+    <h2 id="day-title">Select a Day</h2>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

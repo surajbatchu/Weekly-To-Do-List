@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-image: url('https://surl.lu/cpiidc'); /* replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+  
+  .todo-container {
+    background: rgba(15, 52, 96, 0.95);
+    border: 3px solid #e94560;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 950px;
+    box-shadow: 0 0 15px #e94560;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #e94560;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  .input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  textarea {
+    flex: 1;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    background: #16213e;
+    color: #fff;
+    border: 2px solid #e94560;
+    border-radius: 5px;
+    resize: vertical;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #28a745; /* Green add button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button.edit {
+    background-color: #007bff; /* Blue edit */
+  }
+  
+  button.delete {
+    background-color: #dc3545; /* Red delete */
+  }
+  
+  .week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .day {
+    background-color: #28a745;
+    border: 2px solid #1e7e34;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .day.active {
+    background-color: #1e7e34;
+    color: #fff;
+  }
+  
+  ul.task-list {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  li {
+    background: #16213e;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: grab;
+  }
+  
+  li.dragging {
+    opacity: 0.5;
+  }
+  
+  .task-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+  }
+  
+  .task-content textarea {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    resize: none;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    min-height: 40px;
+  }
+  
+  .task-content input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }  
+  
